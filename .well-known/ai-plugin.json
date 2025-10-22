@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "NewsCorp MCP Demo",
+  "name_for_model": "newscorp_mcp_demo",
+  "description_for_human": "Fetches metadata from NewsCorp MCP instance",
+  "description_for_model": "Call this to retrieve MCP metadata for internal connectors demo.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://sanious-palmer-spacially.ngrok-free.dev/.well-known/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://sanious-palmer-spacially.ngrok-free.dev/logo.png",
+  "contact_email": "you@newscorp.example",
+  "legal_info_url": "https://newscorp.example/legal"
+}

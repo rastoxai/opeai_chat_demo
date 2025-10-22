@@ -1,0 +1,33 @@
+openapi: 3.0.1
+info:
+  title: NewsCorp MCP Demo API
+  version: "1.0"
+paths:
+  /hello:
+    get:
+      summary: Simple hello endpoint
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+  /mcp/metadata:
+    get:
+      summary: Fetch MCP metadata from local instance
+      responses:
+        "200":
+          description: Metadata response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  metadata:
+                    type: object
