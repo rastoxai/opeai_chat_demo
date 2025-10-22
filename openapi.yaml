@@ -1,6 +1,6 @@
 openapi: 3.0.1
 info:
-  title: NewsCorp MCP Demo API
+  title:  MCP Demo API
   version: "1.0"
 paths:
   /hello:

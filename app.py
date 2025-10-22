@@ -3,7 +3,7 @@ from fastapi import FastAPI
 import requests
 import os
 
-app = FastAPI(title="NewsCorp MCP Demo (Local)")
+app = FastAPI(title="MCP Demo (Local)")
 
 # Set default MCP endpoint
 MCP_BASE = os.environ.get("MCP_BASE", "http://localhost:5011")
@@ -11,7 +11,7 @@ MCP_METADATA_PATH = os.environ.get("MCP_METADATA_PATH", "/api/metadata")
 
 @app.get("/hello")
 def hello():
-    return {"message": "Hello World from NewsCorp AgentKit Demo (Local)"}
+    return {"message": "Hello World from  AgentKit Demo (Local)"}
 
 @app.get("/mcp/metadata")
 def get_mcp_metadata():
